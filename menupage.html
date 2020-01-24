@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+         <script src="Cart.js" ></script>
+    
+        <style>
+            
+            button {
+                background-color: #4CAF50; /* Green */
+                border: none;
+                color: white;
+                padding: 5px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+
+
+
+                .shop-item {
+    margin: 30px;
+}
+
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+    margin-bottom: 15px;
+    font-family: Arial;
+}
+
+.shop-item-image {
+    height: 250px;
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    font-family: Arial
+}
+
+.shop-item-price {
+    flex-grow: 1;
+    color: white;
+    font-family: Arial
+}
+
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+            
+            .icon-bar {
+                width: 100%; /* Full-width */
+                background-color: #555; /* Dark-grey background */
+                overflow: auto; /* Overflow due to float */
+                height: 100%;
+                margin: 0px
+                
+            }
+
+            .icon-bar a {
+                float: left; /* Float links side by side */
+                text-align: center; /* Center-align text */
+                width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
+                padding: 0px 0; /* Some top and bottom padding */
+                transition: all 0.3s ease; /* Add transition for hover effects */
+                color: white; /* White text color */
+                font-size: 36px; /* Increased font size */
+            }
+
+            .icon-bar a:hover {
+                background-color: #4CAF50; /* Add a hover color */
+            }
+
+            .active {
+                background-color: ; /* Add an active/current color */
+            }
+            
+            li {
+                 padding-top: 5px;
+
+            }
+
+        </style>
+    </head>
+    
+    <body background = "b3.jpg" style="margin: 0">
+        
+      
+    
+        <!-- Bar the top with logo and shopping cart -->
+        <div class="icon-bar" style="  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+            <a class="active" href="#">
+                    
+                <a href="welcomepage.html"> <img style="width: 25%; height: 25% " src="uottawa.png"></a>
+                
+                </a> 
+            
+            <a href="#" style="float: right">
+            
+                <a href="orderpage.html" style="float: right"><img src="cart.png" style="width: 6%; height: 6%; margin-top: 7px" style="float: right"></a>
+                
+            <i class="cart"></i></a> 
+        </div>
+        
+    
+     <div>
+         <h2 align="center" style="font-family: Verdana; color: white; padding: 20px">Restaurant Name</h2>
+
+     </div>
+        
+
+
+
+
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title" id = "item-1-title">Food 1</span>
+                    <img class="shop-item-image" src="download.jpeg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price" id = "item-1-price">$12.99</span>
+                        <button class="btn btn-primary shop-item-button" value = "item-1-button"type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Food 2</span>
+                    <img class="shop-item-image" src="download.jpeg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$14.99</span>
+                        <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Food 3</span>
+                    <img class="shop-item-image" src="download.jpeg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$9.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Food 4</span>
+                    <img class="shop-item-image" src="download.jpeg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$19.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+        
+
+
+
+
+      
+
+
+
+        </div>
+           <div align="center">
+            <a href="orderpage.html"> <button type="button"> submit order</button> </a>
+        </div>
+    </body>
+
+</html>

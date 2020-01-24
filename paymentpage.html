@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        
+        <script>
+        
+            function popUp(){
+                
+                var address = document.getElementById("address").value;
+                var ccNumber = document.getElementById("ccNumber").value;
+                var ccv = document.getElementById("ccv").value;
+                if(address.length > 0){
+                    
+                    if(ccNumber > 999999999999999 && ccNumber < 10000000000000000){
+                        if (ccv > 99 && ccv < 1000){
+                            alert("Order confirmed")
+                        }else{
+                            alert("Order failed, ensure CCV is 3 digits")
+                        }
+                    }else{
+                        alert("Order failed, ensure credit card number is 16 digits")
+                    }   
+                } else{
+                    alert("Order failed, please check address")
+                }
+            }
+                            
+        
+        </script>
+    
+        <style>
+            
+            button {
+                background-color: #4CAF50; /* Green */
+                border: none;
+                color: white;
+                padding: 5px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+            
+            p {
+                color: white;
+                padding: 10px
+            }
+            
+            .icon-bar {
+                width: 100%; /* Full-width */
+                background-color: #555; /* Dark-grey background */
+                overflow: auto; /* Overflow due to float */
+                height: 100%;
+                margin: 0px
+                
+            }
+
+            .icon-bar a {
+                float: left; /* Float links side by side */
+                text-align: center; /* Center-align text */
+                width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
+                padding: 0px 0; /* Some top and bottom padding */
+                transition: all 0.3s ease; /* Add transition for hover effects */
+                color: white; /* White text color */
+                font-size: 36px; /* Increased font size */
+            }
+
+            .icon-bar a:hover {
+                background-color: #4CAF50; /* Add a hover color */
+            }
+
+            .active {
+                background-color: ; /* Add an active/current color */
+            }
+            
+            .confirm:hover{
+                border: 2px solid #4CAF50; /* Green */
+                transition: all 0.3s ease; /* Add transition for hover effects */
+
+            }
+        
+        
+        </style>
+    </head>
+    
+    <body background = "b3.jpg" style="margin: 0">
+        
+      
+    
+        <!-- Bar the top with logo and shopping cart -->
+        <div class="icon-bar" style="  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+            <a href="welcomepage.html">
+                    
+                <img style="width: 25%; height: 25% " src="uottawa.png">
+                
+                </a> 
+            
+            <a href="orderpage.html" style="float: right">
+            
+                <img src="cart.png" style="width: 6%; height: 6%; margin-top: 7px" style="float: right">
+                
+            <i class="cart"></i></a> 
+        </div>
+        
+        <!-- Main page, has background -->
+        <div >
+        
+            <h2 style="color: white; padding: 10px; font-family: Arial">Welcome to checkout </h2>
+            
+            <p style="font-family: Arial">Total price:</p>
+            
+            <p style="font-family: Arial">Please confirm your payment information</p>
+            
+            <div style="padding: 10px">
+                
+                <input type="text" id="address" placeholder="Delivery address... ">
+                
+            </div>
+            
+            <div style="padding: 10px">
+            
+                <input type="number" id="ccNumber" placeholder="Credit card number... ">
+                <input type="number" id="ccv" placeholder="CCV...">
+                
+            </div>
+            
+            <img src="secure.png" style="height: 20%; width: 20%">
+            
+            <div style="padding: 10px">
+            
+                <button class="confirm" type="button" style="padding: 10px; border-radius: 2px;" onclick="popUp()">Confirm</button>
+                
+            </div>
+            
+            
+            
+            
+        </div>
+        
+        
+    </body>
+
+</html>

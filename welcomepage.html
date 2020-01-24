@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        
+        <style>
+            
+             button {
+                background-color: #4CAF50; /* Green */
+                border: none;
+                color: white;
+                padding: 5px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+            
+            .icon-bar {
+                width: 100%; /* Full-width */
+                background-color: #555; /* Dark-grey background */
+                overflow: auto; /* Overflow due to float */
+                height: 100%;
+                margin: 0px
+                
+            }
+
+            .icon-bar a {
+                float: left; /* Float links side by side */
+                text-align: center; /* Center-align text */
+                width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
+                padding: 0px 0; /* Some top and bottom padding */
+                transition: all 0.3s ease; /* Add transition for hover effects */
+                color: white; /* White text color */
+                font-size: 36px; /* Increased font size */
+            }
+
+            .icon-bar a:hover {
+                background-color: #4CAF50; /* Add a hover color */
+            }
+
+            .active {
+                background-color: ; /* Add an active/current color */
+            }
+            
+            .searchbutton:hover{
+                transition: all 0.3s ease; /* Add transition for hover effects */
+
+                border: 2px solid #4CAF50; /* Green */
+            }
+        
+        </style>
+    </head>
+    
+    <body background = "b3.jpg" style="margin: 0">
+        
+      
+    
+        <!-- Bar the top with logo and shopping cart -->
+        <div class="icon-bar" style="  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                    
+                <a href="welcomepage.html"><img style="width: 25%; height: 25% " src="uottawa.png"></a>
+                
+            
+            <a href="#" style="float: right">
+            
+                <a href="orderpage.html" style="float: right"><img src="cart.png" style="width: 6%; height: 6%; margin-top: 7px" style="float: right"></a>
+                
+            <i class="cart"></i></a> 
+        </div>
+        
+        <!-- Main page, has background -->
+        <div class="containter">
+            
+            <div class="row">
+            
+                <div class="col">
+            
+                </div>
+            
+                <div class="col">
+                
+                    <!-- Slogan words -->
+                
+                    <div>
+                    
+                        <h1 style="color: white; text-align: center; padding: 100px">UEats</h1>
+                        
+                    </div>
+                    
+                    <!--City selection drop down -->
+                    <div>
+                        
+                        <p style="color: white">Choose your city:</p>
+                        
+                        <select style="align: center" name="City Selection">
+                            <option value="Ottawa">Ottawa</option>
+                            <option value="Toronto">Toronto</option>
+                            <option value="Kingston">Kingston</option>
+                            <option value="London">London</option>
+                            <option value="Oshawa">Oshawa</option>
+                            <option value="Cornwall">Cornwall</option>
+
+
+                        </select> 
+            
+                    </div>
+            
+                    <!-- meal type drop down, appears and disappears (to be implemented) -->
+                    <div>
+                        
+                        <p style="color: white; padding-top: 25px">Choose your meal type:</p>
+                        
+                        <select name="Meal Type">
+                            <option value="Any">Any</option>
+                            <option value="Breakfast">Breakfast</option>
+                            <option value="Lunch">Lunch</option>
+                            <option value="Dinner">Dinner</option>
+                            <option value="Drinks">Drinks</option>
+
+                        </select> 
+            
+                    </div>
+                    
+                    <!-- Search -->
+                    <div class="search">
+                        
+                        <p style="color: white; padding-top: 25px">Search for your meal:</p>
+                        
+                        <input type="text" placeholder="Search...">
+                       <a href="restaurantlist.html"> <button class = "searchbutton" type="submit"; style="border-radius: 2px;">Search</button></a>
+                    
+                    </div>
+            
+                </div>
+            
+                <div class="col">
+            
+                </div>
+        
+            </div>
+        </div>
+        
+        
+    </body>
+
+</html>
